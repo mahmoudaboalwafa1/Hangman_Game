@@ -51,6 +51,19 @@ div.row {
   display: flex;
 }
 
+@media (max-width: 768px) {
+  div.row {
+    flex-direction: column;
+  }
+  ul.game-letters {
+    width: 100%;
+    justify-content: center;
+  }
+  ul.game-letters li {
+    width: 10%;
+  }
+}
+
 div.info {
   display: flex;
   justify-content: space-between;
@@ -58,6 +71,12 @@ div.info {
 
 div.info span {
   color: red;
+}
+
+@media (max-width: 768px) {
+  div.info h1 {
+    font-size: 16px;
+  }
 }
 
 div.game-hangman {
@@ -200,6 +219,12 @@ div.game-guess span {
   display: block;
   border-bottom: solid 4px #222;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  div.game-guess span {
+    width: 2px;
+  }
 }
 
 div.game-guess span.has-space {
