@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HangMan</title>
+    <link rel="shortcut icon" href="./static/hangman.png" type="image/x-icon" />
+    <link rel="styleSheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <hr />
+      <div class="info">
+        <h1>HangMan</h1>
+        <h1>Word From: <span></span></h1>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="game-hangman">
+          <div class="stack">
+            <div class="stack-up">
+              <div class="rope"></div>
+              <div class="man">
+                <div class="man-stack">
+                  <div class="leg"></div>
+                </div>
+              </div>
+            </div>
+            <div class="stack-down"></div>
+          </div>
+        </div>
+        <ul class="game-letters"></ul>
+      </div>
+      <div class="game-guess"></div>
+      <hr />
+    </div>
+    <audio id="wrong" src="./static/wrong.mp3" preload="auto"></audio>
+    <audio id="death" src="./static/death.mp3" preload="auto"></audio>
+    <audio id="success" src="./static/success.mp3" preload="auto"></audio>
+    <audio
+      id="successful"
+      src="./static/succsessfull.mp3"
+      preload="auto"
+    ></audio>
+    <script src="./main.js"></script>
+  </body>
+</html>
